@@ -44,6 +44,8 @@ namespace Plant_Digitization_api
             var jsonpFormatter = new JsonpMediaTypeFormatter(config.Formatters.JsonFormatter);
             config.Formatters.Add(jsonpFormatter);
 
+            //Committed for local purposes
+
             //EnableCorsAttribute cors = new EnableCorsAttribute("http://localhost:62292", "*", "GET,POST");
 
             //EnableCorsAttribute cors = new EnableCorsAttribute("https://teali4metricstest.azurewebsites.net", "*", "GET,POST");

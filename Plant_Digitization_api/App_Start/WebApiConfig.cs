@@ -35,7 +35,7 @@ namespace Plant_Digitization_api
                     EndpointThrottling = true,
                     EndpointRules = new Dictionary<string, RateLimits>
                     { 
-             //Fine tune throttling per specific API here
+             //Fine tune throttling per specific API here also
                     { "api/UserSettings/Forgot_Password", new RateLimits { PerSecond = 1, PerMinute = 3, PerHour = 10 } }
                     }
                 },

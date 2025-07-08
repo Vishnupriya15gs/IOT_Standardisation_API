@@ -39,7 +39,7 @@ namespace Plant_Digitization_api.Controllers
                     cmd.Parameters.Add("@Fdate ", SqlDbType.NVarChar, 150).Value = AS.Parameter4;
                     cmd.Parameters.Add("@line ", SqlDbType.NVarChar, 150).Value = AS.Line_Code;
                     cmd.Parameters.Add("@Tdate", SqlDbType.NVarChar, 150).Value = AS.Parameter5;
-                    cmd.Parameters.Add("@Alarm_ID", SqlDbType.NVarChar, 150).Value = AS.Alarm_Description; //
+                    cmd.Parameters.Add("@Alarm_ID", SqlDbType.NVarChar, 150).Value = AS.Alarm_ID; //
                     //removed for PLC Standardisation 29-03-2025
                     //cmd.Parameters.Add("@Alarm_Description", SqlDbType.NVarChar, 150).Value = AS.Alarm_Description;
                     cmd.Parameters.Add("@CompanyCode", SqlDbType.NVarChar, 150).Value = AS.CompanyCode;

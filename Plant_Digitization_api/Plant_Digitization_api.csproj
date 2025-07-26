@@ -276,6 +276,7 @@
     <Compile Include="Controllers\OEEController.cs" />
     <Compile Include="Controllers\OperatorallocationController.cs" />
     <Compile Include="Controllers\OperatorEfficiencyController.cs" />
+    <Compile Include="Controllers\OverallOEEController.cs" />
     <Compile Include="Controllers\RBACController.cs" />
     <Compile Include="Models\Holidaylive.cs" />
     <Compile Include="Models\LineOverviewProd.cs" />
@@ -303,6 +304,7 @@
     <Compile Include="Models\Model.cs" />
     <Compile Include="Models\OEE.cs" />
     <Compile Include="Models\OperatorEfficiency.cs" />
+    <Compile Include="Models\OverallOEE.cs" />
     <Compile Include="Models\Paretoanalysis.cs" />
     <Compile Include="Models\Quality_analysis.cs" />
     <Compile Include="Models\ReportMail.cs" />
@@ -414,6 +416,7 @@
     <Folder Include="Views\LineOverviewProd\" />
     <Folder Include="Views\LineOverView_Quality\" />
     <Folder Include="Views\MISReport\" />
+    <Folder Include="Views\OverallOEE\" />
     <Folder Include="Views\RawTable\" />
     <Folder Include="Views\Rules\" />
     <Folder Include="Views\Upload\" />

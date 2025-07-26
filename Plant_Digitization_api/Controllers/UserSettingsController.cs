@@ -2733,7 +2733,15 @@ namespace Plant_Digitization_api.Controllers
                         cmd.Parameters.Add("@UserName", SqlDbType.NVarChar, 150).Value = lo.UserName;
                         cmd.Parameters.Add("@Password", SqlDbType.NVarChar, 150).Value = EncodePassword(lo.Password, hc);
                         //cmd.Parameters.Add("@Password", SqlDbType.NVarChar, 150).Value = EncryptPassword(lo.Password);
-                        cmd.Parameters.Add("@Lastlogin", SqlDbType.NVarChar, 150).Value = lo.lastlogin;
+                        //cmd.Parameters.Add("@Lastlogin", SqlDbType.NVarChar, 150).Value = lo.lastlogin;
+                        if (string.IsNullOrWhiteSpace(lo.lastlogin))
+                        {
+                            cmd.Parameters.Add("@Lastlogin", SqlDbType.NVarChar, 150).Value = DBNull.Value;
+                        }
+                        else
+                        {
+                            cmd.Parameters.Add("@Lastlogin", SqlDbType.NVarChar, 150).Value = lo.lastlogin;
+                        }
                         SqlParameter SQLReturn = new SqlParameter("@SQLReturn", SqlDbType.NVarChar, 50);
                         SqlParameter lastlogindate = new SqlParameter("@lastlogindate", SqlDbType.DateTime);
                         SQLReturn.Direction = ParameterDirection.Output;
